@@ -31,7 +31,7 @@ const FeedbackForm = () => {
 
       <form>
           <h2>How would you rate your service with us ?</h2>
-            <RatingSelect rating={rating}/>
+            <RatingSelect select={(rating)=>setRating(rating)}/>
           <div className="input-group">
               <input onChange={handleTextChange} value={text} type="text" placeholder='Write a review'/>
               <Button type="submit"  isDisabled={btnDisabled}>Send</Button>
