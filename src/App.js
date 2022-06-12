@@ -8,6 +8,9 @@ import FeedbackForm from './components/FeedbackForm'
 import {v4 as uuidv4} from 'uuid'
 import {BrowserRouter as Router, Route, Routes} from 'react-router-dom'
 import AboutPage from './pages/AboutPage'
+import AboutIconLink from './components/AboutIconLink'
+import { FeedbackProvider } from './context/FeedbackContext'
+
 
 const App=()=>{
 
@@ -27,6 +30,7 @@ const App=()=>{
         }
     }
     return ( 
+        <FeedbackProvider>
         <Router>
         <Header/>
         <div className='container'>
@@ -42,10 +46,12 @@ const App=()=>{
         </Route>
         
         <Route path='/about' element={<AboutPage/>}/>
-        </Routes>
+         </Routes>
+        <AboutIconLink />
         </div>
 
         </Router>
+        </FeedbackProvider>
     )
 }
 
