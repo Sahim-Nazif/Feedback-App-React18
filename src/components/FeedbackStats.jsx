@@ -1,10 +1,12 @@
-import React from 'react'
+import React, {useContext} from 'react'
 import PropTypes from 'prop-types'
+import FeedbackContext from '../context/FeedbackContext'
 
 
 
-const FeedbackStats = ({feedback}) => {
+const FeedbackStats = () => {
 
+  const {feedback}= useContext(FeedbackContext)
     let averageRating= feedback.reduce((acc, cur)=>{
 
          return acc+=cur.rating
