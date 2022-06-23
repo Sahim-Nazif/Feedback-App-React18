@@ -1,24 +1,14 @@
 {
   "feedback": [
     {
-      "id": 1,
-      "rating": 10,
-      "text": "Json data"
-    },
-    {
       "id": 2,
       "rating": 7,
       "text": "Json data from server"
     },
     {
-      "id": 3,
-      "rating": 7,
-      "text": "Json data from server June 14 2022"
-    },
-    {
-      "text": "sadfasfasdsfdasdf",
-      "rating": 4,
-      "id": 4
+      "text": "Json data from server June 17 2022",
+      "rating": 6,
+      "id": 3
     }
   ]
 }
